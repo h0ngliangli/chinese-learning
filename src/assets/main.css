@@ -1,0 +1,39 @@
+/* 重置样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  /* 中文serif字体 */
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  color: #333;
+  background: #f2f2f2;
+}
+
+.background {
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  background-image: url('/background.png');
+  background-size: cover;
+}
+
+#app {
+  max-width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-weight: normal;
+}
