@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'dictation',
       component: () => import('../views/DictationView.vue'),
     },
+    {
+      path: '/checkin',
+      name: 'checkin',
+      component: () => import('../views/CheckinView.vue'),
+    }
   ],
 })
 

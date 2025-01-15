@@ -51,6 +51,7 @@ const toggleModal = () => {
     <RouterLink to="/story">故事</RouterLink>
     <RouterLink to="/dictation">听写</RouterLink>
     <a class="lookup-button" @click="toggleModal">查</a>
+    <RouterLink to="/checkin">打卡</RouterLink>
   </nav>
   <DictionaryPanel :show-modal="showModal" />
   <RouterView />

@@ -128,6 +128,17 @@ app.get('/api/checkin', async (req, res) => {
   res.send('Checkin successful')
 })
 
+// /api/get-checkins
+app.get('/api/get-checkins', async (req, res) => {
+  // time to get all checkins
+  const timemark = new Date().getTime()
+  console.log('/api/get-checkins')
+  const checkins = await db.getCheckins()
+  res.setHeader('Content-Type', 'application/json')
+  res.send({checkins: checkins})
+  console.log('Time taken:', new Date().getTime() - timemark, 'ms')
+})
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`)
 })
